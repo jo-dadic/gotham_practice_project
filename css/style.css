@@ -153,7 +153,8 @@ body {
 
 /*--------------HEADER------------*/
 
-.page-header {
+.page-header,
+.page-footer {
   height: 67px;
   width: 100%;
   background: #f7c61d;
@@ -164,15 +165,17 @@ body {
   height: 100%;
 }
 
-.page-header .wrapper {
+.page-header .wrapper,
+.page-footer .wrapper {
   display: flex; /*display:flex; ih je odmah rasporedilo horizontalno*/
   margin: 0 auto;
   justify-content: space-around;
   align-items: center;
 }
 
-.page-header nav ul {
+nav ul {
   display: flex;
+  justify-content: space-between;
 }
 
 .page-header nav a {
@@ -182,4 +185,47 @@ body {
   text-decoration: none;
   justify-content: space-between;
   padding: 0 35px;
+}
+
+/*--------------FOOTER------------*/
+.page-footer {
+  margin: 100px 0;
+}
+
+/*zvjezdica određuje da se radi o specifično itemsima u wrapperu!*/
+.page-footer > .wrapper > * {
+  width: 33.33%;
+} /*na ovaj način su se tri glavna dijela footera raspodijelila podjednako*/
+
+.copy {
+  font-family: Proxima;
+  font-weight: 300;
+  font-size: 13px;
+  color: #a78613;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socials a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border-radius: 50%;
+  color: #f7c61d;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 16px;
 }
