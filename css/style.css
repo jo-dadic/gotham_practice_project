@@ -134,6 +134,13 @@ table {
 }
 
 @font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Light.woff") format("woff"),
+    url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
   font-family: Proxima;
   src: url("../fonts/ProximaNova-Light.woff") format("woff"),
     url("../fonts/ProximaNova-Light.ttf") format("truetype");
@@ -144,6 +151,13 @@ table {
   font-family: Proxima;
   src: url("../fonts/ProximaNova-Regular.woff") format("woff"),
     url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url("../fonts/ProximaNova-Bold.woff") format("woff"),
+    url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
 }
 
 body {
@@ -163,12 +177,12 @@ body {
 .wrapper {
   width: 1170px;
   height: 100%;
+  margin: 0 auto;
 }
 
 .page-header .wrapper,
 .page-footer .wrapper {
   display: flex; /*display:flex; ih je odmah rasporedilo horizontalno*/
-  margin: 0 auto;
   justify-content: space-around;
   align-items: center;
 }
@@ -185,6 +199,48 @@ nav ul {
   text-decoration: none;
   justify-content: space-between;
   padding: 0 35px;
+}
+
+/*--------------MAIN------------*/
+.main > .wrapper {
+  display: flex;
+}
+
+main {
+  width: 77%;
+}
+
+.right-sidebar {
+  width: 23%;
+}
+
+article {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-family: Proxima;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 40px 0 15px;
+}
+
+article h3 {
+  font-family: Proxima;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.meta {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 13px;
+  color: #999;
 }
 
 /*--------------FOOTER------------*/
