@@ -226,6 +226,10 @@ article {
   width: 30%;
 }
 
+.article-right .meta {
+  margin: 18px 0;
+}
+
 .article-left img {
   border-radius: 5px;
 }
@@ -276,8 +280,10 @@ article h3 {
 
 .description {
   color: #555;
-  font-family: Roboto;
+  font-family: Proxima;
+  font-weight: 300;
   font-size: 16px;
+  line-height: 1.6;
 }
 
 .description::after {
@@ -306,7 +312,9 @@ article h3 {
 .additional {
   color: #999;
   font-family: Roboto;
+  font-size: 13px;
   font-weight: 300;
+  margin-top: 18px;
 }
 
 .comments {
@@ -420,9 +428,40 @@ article h3 {
   color: #fff;
 }
 
+.popular-news h2 {
+  font-family: Proxima;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex; /*ovdje dodano kako bi linija od ispod bila u ravnini sa naslovom*/
+  white-space: nowrap; /*naslov se ne wrapa na dva retka*/
+  align-items: center;
+}
+
+.popular-news h2::after {
+  content: ".";
+  font-size: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #e5e5e5;
+  margin-left: 20px;
+}
+
+.popular-news article {
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.popular-news h3 {
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+
 /*--------------FOOTER------------*/
 .page-footer {
-  margin: 100px 0;
+  margin: 100px 0 0;
 }
 
 /*zvjezdica određuje da se radi o specifično itemsima u wrapperu!*/
